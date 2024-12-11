@@ -2,8 +2,6 @@
 
 Create a fast real-time face recognition app with Python and OpenCV.
 
-![gif](gif.gif)
-
 ## Installation
 
 ```bash
@@ -25,16 +23,10 @@ All settings are stored in `src/config.yaml`:
 - File paths
 - Confidence threshold (how confident the model has to be to recognize a face)
 
-You can modify these settings without changing the code.
-
-## Usage
-
-The system works in three steps:
-
 ### 1. Capture Face Data
-Run `face_taker.py` to capture training images:
+Run `DataCollection.py` to capture training images:
 ```bash
-python src/face_taker.py
+python src/DataCollection.py
 ```
 - Enter your name when prompted
 - :rotating_light: The script captures 120 images of your face. Make sure to have a good lighting and move your head around to capture different angles.
@@ -52,19 +44,19 @@ Format of `names.json`:
 ```
 
 ### 2. Train the Model
-Run `face_train.py` to create the recognition model:
+Run `FaceTrainer.py` to create the recognition model:
 ```bash
-python src/face_train.py
+python src/FaceTrainer.py
 ```
 - Processes all images in the `images` folder
 - Creates a trained model file `trainer.yml`
 - Shows number of faces trained
-
 Note: Training images are saved as: `Users-{id}-{number}.jpg`
+
 ### 3. Run Face Recognition
-Run `face_recognizer.py` to start real-time recognition:
+Run `FaceRecogGenderAgeDetect.py` to start real-time recognition:
 ```bash
-python src/face_recognizer.py
+python src/FaceRecogGenderAgeDetect.py
 ```
 - Your webcam will open and start recording
 - Recognizes faces in real-time
