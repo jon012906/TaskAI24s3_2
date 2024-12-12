@@ -1,8 +1,9 @@
-# Real Time Face Recognition (OpenCV)
+# Simple Face Recognition with Gender and Age Detection
 
-Create a fast real-time face recognition app with Python and OpenCV.
+This project was made based on real time face recognition project https://github.com/medsriha/real-time-face-recognition.git and gender & age detection project https://github.com/smahesh29/Gender-and-Age-Detection
 
 ## Installation
+Make sure you have python 3.07 or more.
 
 ```bash
 pip install -r requirements.txt
@@ -38,8 +39,8 @@ python src/DataCollection.py
 Format of `names.json`:
 ```json
 {
-    "1": "Joe",
-    "2": "Jane"
+    "1": "Jon",
+    "2": "Janss"
 }
 ```
 
@@ -60,20 +61,9 @@ python src/FaceRecogGenderAgeDetect.py
 ```
 - Your webcam will open and start recording
 - Recognizes faces in real-time
-- Shows name and confidence level
+- Shows name and confidence level and gender & age prediction
 - Press 'ESC' to exit
 
-## Project Structure
-```
-├── src/
-│   ├── config.yaml      # Configuration settings
-│   ├── config.py        # Configuration loader
-│   ├── face_taker.py    # Capture training images
-│   ├── face_train.py    # Train the model
-│   └── face_recognizer.py # Real-time recognition
-├── images/              # Training images
-├── names.json          # Name-ID mappings
-└── trainer.yml         # Trained model
-```
+
 
 
