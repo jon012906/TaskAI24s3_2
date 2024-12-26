@@ -53,7 +53,7 @@ age_net = cv2.dnn.readNetFromCaffe(age_proto, age_model)
 gender_net = cv2.dnn.readNetFromCaffe(gender_proto, gender_model)
 
 # Define model inputs
-AGE_LIST = ['(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+AGE_LIST = ['(0-2)','(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
 GENDER_LIST = ['Male', 'Female']
 
 if __name__ == "__main__":
