@@ -14,6 +14,7 @@ Required packages:
 - opencv-contrib-python
 - pillow
 - pyyaml
+- argparse
 
 ## Configuration
 
